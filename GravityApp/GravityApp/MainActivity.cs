@@ -12,18 +12,31 @@ namespace GravityApp
     [Activity(Label = "@string/Gravity", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-
+        private Button LogInButton;
+        private Button SignUpButton;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
-            SetSupportActionBar(toolbar);
+            //Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
+            //SetSupportActionBar(toolbar);
+            LogInButton = FindViewById<Button>(Resource.Id.LogIn);
+            LogInButton.Click += LogInButton_Click;
+            SignUpButton = FindViewById<Button>(Resource.Id.SignUp);
+            SignUpButton.Click += SignUpButton_Click;
 
-            FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
-            fab.Click += FabOnClick;
+        }
+
+        private void SignUpButton_Click(object sender, EventArgs e)
+        {
+            SetContentView(Resource.Layout.SignUp); ;
+        }
+
+        private void LogInButton_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
@@ -43,12 +56,6 @@ namespace GravityApp
             return base.OnOptionsItemSelected(item);
         }
 
-        private void FabOnClick(object sender, EventArgs eventArgs)
-        {
-            View view = (View) sender;
-            Snackbar.Make(view, "Replace with your own action", Snackbar.LengthLong)
-                .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
-        }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
