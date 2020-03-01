@@ -1533,24 +1533,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JHELM22\\.nuget\\packages\\": {},
+    "C:\\Users\\ptucker\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JHELM22\\source\\repos\\Gravity\\GravityApp\\GravityApp\\GravityApp.csproj",
+      "projectUniqueName": "C:\\Users\\ptucker\\Desktop\\GravityApp\\GravityApp\\GravityApp\\GravityApp.csproj",
       "projectName": "GravityApp",
-      "projectPath": "C:\\Users\\JHELM22\\source\\repos\\Gravity\\GravityApp\\GravityApp\\GravityApp.csproj",
-      "packagesPath": "C:\\Users\\JHELM22\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JHELM22\\source\\repos\\Gravity\\GravityApp\\GravityApp\\obj\\",
+      "projectPath": "C:\\Users\\ptucker\\Desktop\\GravityApp\\GravityApp\\GravityApp\\GravityApp.csproj",
+      "packagesPath": "C:\\Users\\ptucker\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ptucker\\Desktop\\GravityApp\\GravityApp\\GravityApp\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\JHELM22\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ptucker\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

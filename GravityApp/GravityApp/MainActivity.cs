@@ -1,5 +1,6 @@
 ﻿using System;
 using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Support.Design.Widget;
@@ -9,7 +10,7 @@ using Android.Widget;
 
 namespace GravityApp
 {
-    [Activity(Label = "@string/Gravity", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
+    [Activity(Label = "Gravity", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
         private Button LogInButton;
@@ -31,12 +32,15 @@ namespace GravityApp
 
         private void SignUpButton_Click(object sender, EventArgs e)
         {
-            SetContentView(Resource.Layout.SignUp); ;
+            var SignUpAct = new Intent(this, typeof(SignUpPage));
+            StartActivity(SignUpAct);
+
         }
 
         private void LogInButton_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            var LogInAct = new Intent(this, typeof(LogInPage));
+            StartActivity(LogInAct);
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

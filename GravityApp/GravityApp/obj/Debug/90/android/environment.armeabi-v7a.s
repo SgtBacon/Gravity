@@ -23,7 +23,7 @@
 	.section	.rodata..L.str.1,"aMS",%progbits,1
 	.type	.L.str.1, %object
 .L.str.1:
-	.asciz	"com.companyname.gravityapp"
+	.asciz	"com.companyname.GravityApp"
 	.size	.L.str.1, 27
 	.section	.data.application_config,"aw",%progbits
 	.type	application_config, %object
@@ -82,7 +82,7 @@ mono_aot_mode_name:
 	.section	.rodata..L.str.8,"aMS",%progbits,1
 	.type	.L.str.8, %object
 .L.str.8:
-	.asciz	"264dd31e-ce54-4661-8561-fc281d0727dc"
+	.asciz	"97e19998-65f7-4516-b615-fc4609df0f36"
 	.size	.L.str.8, 37
 	.section	.rodata..L.str.9,"aMS",%progbits,1
 	.type	.L.str.9, %object

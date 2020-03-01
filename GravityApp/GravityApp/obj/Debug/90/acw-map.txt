@@ -1,3 +1,9 @@
+GravityApp.SignUpPage, GravityApp;crc645286fc7fe5133aa8.SignUpPage
+GravityApp.SignUpPage;crc645286fc7fe5133aa8.SignUpPage
+gravityapp.SignUpPage;crc645286fc7fe5133aa8.SignUpPage
+GravityApp.LogInPage, GravityApp;crc645286fc7fe5133aa8.LogInPage
+GravityApp.LogInPage;crc645286fc7fe5133aa8.LogInPage
+gravityapp.LogInPage;crc645286fc7fe5133aa8.LogInPage
 GravityApp.MainActivity, GravityApp;crc645286fc7fe5133aa8.MainActivity
 GravityApp.MainActivity;crc645286fc7fe5133aa8.MainActivity
 gravityapp.MainActivity;crc645286fc7fe5133aa8.MainActivity
