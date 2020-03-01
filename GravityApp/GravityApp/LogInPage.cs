@@ -19,7 +19,11 @@ namespace GravityApp
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.LogIn);
+            SetContentView(Resource.Layout.LogIn); //Change User view to LogIn page
         }
+
+        //LET USER ENTER THEIR EMAIL AND PASSWORD
+        //CHECK IF EMAIL HAS BEEN USED
+        //CHECK IF PASSWORD MATCHES GIVEN EMAIL
     }
 }
