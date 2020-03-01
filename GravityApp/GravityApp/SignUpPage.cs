@@ -34,13 +34,35 @@ namespace GravityApp
 
         private void CreateUser_Click(object sender, EventArgs e)
         {
-            if (FindViewById<EditText>(Resource.Id.EnterName).Text.Length == 0 || FindViewById<EditText>(Resource.Id.EnterMajor).Text.Length == 0 || FindViewById<EditText>(Resource.Id.EnterEmail).Text.Length == 0)
+            string ErrorTitle = "";
+            string ErrorMessage = "";
+            AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+            AlertDialog alert = dialog.Create();
+            if (FindViewById<EditText>(Resource.Id.EnterName).Text.Length == 0 || FindViewById<EditText>(Resource.Id.EnterName).Text.Length >= 25 || FindViewById<EditText>(Resource.Id.EnterMajor).Text.Length <= 0 || FindViewById<EditText>(Resource.Id.EnterMajor).Text.Length >= 35 || FindViewById<EditText>(Resource.Id.EnterEmail).Text.Length <= 0 || FindViewById<EditText>(Resource.Id.EnterEmail).Text.Length >= 40)
             {
-                AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-                AlertDialog alert = dialog.Create();
-                alert.SetTitle("Woah there");
-                alert.SetMessage("You're not done!");
-                
+                if (FindViewById<EditText>(Resource.Id.EnterName).Text.Length <= 0 || FindViewById<EditText>(Resource.Id.EnterName).Text.Length >= 25)
+                {
+                    ErrorMessage = "You have to enter a Name and it must be below 25 characters";
+                    ErrorTitle = "Error with Name";
+                    alert.SetTitle(ErrorTitle);
+                    alert.SetMessage(ErrorMessage);
+                }
+                else if (FindViewById<EditText>(Resource.Id.EnterMajor).Text.Length <= 0 || FindViewById<EditText>(Resource.Id.EnterMajor).Text.Length >= 35)
+                {
+                    ErrorMessage = "You have to enter a Major and it must be below 35 characters";
+                    ErrorTitle = "Error with Major";
+                    alert.SetTitle(ErrorTitle);
+                    alert.SetMessage(ErrorMessage);
+                }
+                else if (FindViewById<EditText>(Resource.Id.EnterEmail).Text.Length <= 0 || FindViewById<EditText>(Resource.Id.EnterEmail).Text.Length >= 40)
+                {
+                    ErrorMessage = "You have to enter an Email and it must be below 40 characters";
+                    ErrorTitle = "Error with Email";
+                    alert.SetTitle(ErrorTitle);
+                    alert.SetMessage(ErrorMessage);
+                }
+
+
                 alert.Show();
             }
         }
