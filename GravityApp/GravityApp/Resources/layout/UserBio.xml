@@ -1,0 +1,39 @@
+﻿<RelativeLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="150px"
+          android:text="Bio"
+          android:textColor="#000000"
+          android:textSize="120px"
+          android:gravity="center_vertical|center"/>
+      <TextView
+          android:id="@+id/CurUserID"
+          android:layout_width="match_parent"
+          android:layout_height="150px"
+          android:text="Name"
+          android:textColor="#000000"
+          android:textSize="50px"
+          android:gravity="center_vertical|center"
+          android:layout_marginTop="100px"/>
+      <TextView
+        android:id="@+id/CurUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:text="Email"
+        android:textColor="#000000"
+        android:textSize="50px"
+        android:gravity="center_vertical|center"
+        android:layout_marginTop="100px"/>
+      </LinearLayout>
+  </RelativeLayout>

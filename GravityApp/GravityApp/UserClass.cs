@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
-
+using System.Xml;
+using System.Xml.Schema;
+using System.Xml.Serialization;
 using Android.App;
 using Android.Content;
 using Android.Graphics;
@@ -14,13 +17,14 @@ using Android.Widget;
 
 namespace GravityApp
 {
-    class UserClass
-    {
-        private string Name; //A User has a Name, Major, Email, Password (expressed in Strings), and an Image (expressed in a Drawable)
-        private string Major;
-        private string Email;
-        private string Password;
-        private Drawable Image;
+
+    public class UserClass 
+    { 
+        public string Name { get; set; } //A User has a Name, Major, Email, Password (expressed in Strings), and an Image (expressed in a Drawable)
+        public string Major { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        private Drawable Image { get; set; }
 
         //ADD USER BIO (String? How many characters?)
 
@@ -33,6 +37,17 @@ namespace GravityApp
             Email = E;
             Password = P;
             Image = I;
+        }
+
+        public bool CheckEmail(string ThisEmail)
+        {
+
+            if (this.Email == ThisEmail)
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }

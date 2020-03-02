@@ -13,8 +13,8 @@ namespace GravityApp
     [Activity(Label = "Gravity", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        private Button LogInButton;
-        private Button SignUpButton;
+        private Button MainLogIn;
+        private Button MainSignUp;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -23,10 +23,10 @@ namespace GravityApp
 
             //Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             //SetSupportActionBar(toolbar);
-            LogInButton = FindViewById<Button>(Resource.Id.LogIn);
-            LogInButton.Click += LogInButton_Click;
-            SignUpButton = FindViewById<Button>(Resource.Id.SignUp);
-            SignUpButton.Click += SignUpButton_Click;
+            MainLogIn = FindViewById<Button>(Resource.Id.LogIn);
+            MainLogIn.Click += LogInButton_Click;
+            MainSignUp = FindViewById<Button>(Resource.Id.SignUp);
+            MainSignUp.Click += SignUpButton_Click;
 
         }
 
