@@ -528,3 +528,4 @@ C:\Users\ptucker\Desktop\GravityApp\GravityApp\GravityApp\obj\Debug\90\stamp\_Ge
 C:\Users\ptucker\Desktop\GravityApp\GravityApp\GravityApp\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\ptucker\Desktop\GravityApp\GravityApp\GravityApp\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\ptucker\Desktop\GravityApp\GravityApp\GravityApp\obj\Debug\90\GravityApp.csprojAssemblyReference.cache
+C:\Users\ptucker\Desktop\GravityApp\GravityApp\GravityApp\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp

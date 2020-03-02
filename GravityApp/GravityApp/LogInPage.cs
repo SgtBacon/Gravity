@@ -70,7 +70,8 @@ namespace GravityApp
                 }
                 else
                 {
-
+                    var GoMainMenu = new Intent(this, typeof(MainActivity));
+                    StartActivity(GoMainMenu);
                 }
             }
         }
